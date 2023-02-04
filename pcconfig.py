@@ -1,7 +1,9 @@
+import os
+
 import pynecone as pc
 
 config = pc.Config(
-    port=3000,
+    port=int(os.environ["PORT"]),
     app_name="pcweb",
     db_url="sqlite:///pynecone.db",
     frontend_packages=[
