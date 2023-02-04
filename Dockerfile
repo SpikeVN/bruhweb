@@ -7,5 +7,4 @@ RUN pip3 install -r requirements.txt
 RUN curl -fsSL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt install -y nodejs
 COPY . .
-RUN chmod +x run.sh
-CMD [ "pc", "init", "&&", "pc", "run", "--env", "prod"]
+CMD [ "python3", "run.py" ]
