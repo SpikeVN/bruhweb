@@ -3,7 +3,6 @@ import os
 import pynecone as pc
 
 config = pc.Config(
-    port=int(os.environ["PORT"]),
     api_url="0.0.0.0",
     app_name="pcweb",
     db_url="sqlite:///pynecone.db",
